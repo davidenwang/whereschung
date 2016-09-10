@@ -1,0 +1,25 @@
+{
+  "name": "whereschung",
+  "version": "1.0.0",
+  "description": "Crowd-sourced web app for realtime tracking of public figure Austin Chung",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Davidw1339/whereschung.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Davidw1339/whereschung/issues"
+  },
+  "homepage": "https://github.com/Davidw1339/whereschung#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongoose": "^4.6.0"
+  }
+}
