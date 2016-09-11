@@ -9,7 +9,7 @@ var routes = require('./app/routes.js');
 
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb://localhost/test');
+mongoose.connect('mongodb://admin:admin@ds029466.mlab.com:29466/heroku_z8wq79p5');
 
 app.use(express.static(path.join(__dirname, '/public/views')));
 
