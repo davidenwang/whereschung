@@ -6,7 +6,8 @@ var Chung = new Schema(
 {
 	  location: String,
     upvotes: Number,
-    downvotes: Number
+    downvotes: Number,
+		createdAt: Date
 });
 
 module.exports = mongoose.model('locations', Chung);

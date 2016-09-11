@@ -3,8 +3,11 @@ var app = express();
 var mongoose = require('mongoose');
 var path = require('path');
 var Chung = require('./app/models/chung.js');
+var bodyParser = require('body-parser');
 
 var routes = require('./app/routes.js');
+
+app.use(bodyParser.json());
 
 mongoose.connect('mongodb://localhost/test');
 

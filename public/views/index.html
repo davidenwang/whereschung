@@ -15,22 +15,33 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
-	<body>
+	<body style="overflow:hidden;" ng-app="locationApp" ng-controller="mainController">
+
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+			<div id="wrapper" style="height: 100%">
 				<section>
-					<h2>Chung last spotted: 918 W. Illinois Street</h2>
+					<h2>Spotted: <span style="font-size: .7em; color: #8cc9f0">{{timePassed}} ago</span></h2>
 				</section>
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1>Found Austin Chung?</h1>
-						<a href="#" class = "button big special">LOCATED</a>
-					</header>
 
+				<section style="text-align: center;">
+					<iframe id="map" style = "height: 300px; width: 100%" src="">
+					</iframe>
+					<p style="text-align: center">{{latitude}}, {{longitude}}</p>
+				</section>
+				<hr style="margin: 5px 5px 5px 5px">
+				<!-- Header -->
+				<header id="header" class="alt" style="padding-top: 5px">
+					<h1>Found Austin Chung?</h1>
+					<!-- <form action="/data/newentry" method="post"> -->
+					<button class = "button big special" ng-click="newlocation()">FOUND!</button>
+					<!-- </form> -->
+				</header>
 			</div>
 
 		<!-- Scripts -->
+			<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.js"></script>
+			<script src="js/controller.js"></script>
 			<script src="js/jquery.min.js"></script>
 			<script src="js/jquery.scrollex.min.js"></script>
 			<script src="js/jquery.scrolly.min.js"></script>
