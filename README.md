@@ -2,6 +2,6 @@
 Crowd-sourced web app for realtime tracking of public figure Austin Chung
 
 # Enjoy
-tinyurl.com/austinchung
-or
-wheresx.herokuapp.com
+[a link](tinyurl.com/austinchung) <br />
+or <br />
+[a link](wheresx.herokuapp.com)
