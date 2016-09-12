@@ -31,6 +31,7 @@ locationApp.controller('mainController', ['$scope', '$http', '$window', function
   {
     // $scope.latitude + ", " + $scope.longitude
     $http.post("/data/newentry", {location: $scope.latitude + ", " + $scope.longitude});
+    location.reload();
   }
 
   if (navigator.geolocation)
@@ -40,7 +41,8 @@ locationApp.controller('mainController', ['$scope', '$http', '$window', function
       var startPos;
       var geoOptions =
       {
-        enableHighAccuracy: true
+        enableHighAccuracy: true,
+        maximumAge: 0
       }
       var geoSuccess = function(position)
       {
