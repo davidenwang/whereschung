@@ -2,4 +2,4 @@
 Crowd-sourced web app for realtime tracking of public figure Austin Chung
 
 # Enjoy
-[website](https://tinyurl.com/austinchung)
+[Web App](https://tinyurl.com/austinchung)
