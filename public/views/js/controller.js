@@ -30,6 +30,7 @@ locationApp.controller('mainController', ['$scope', '$http', '$window', function
   $scope.newlocation = function()
   {
     // $scope.latitude + ", " + $scope.longitude
+    $('#foundBtn').prop('disabled', true);
     $http.post("/data/newentry", {location: $scope.latitude + ", " + $scope.longitude});
     location.reload();
   }
@@ -50,6 +51,7 @@ locationApp.controller('mainController', ['$scope', '$http', '$window', function
         console.log(startPos);
         $scope.latitude = startPos.coords.latitude;
         $scope.longitude = startPos.coords.longitude;
+        $('#foundBtn').prop('disabled', false);
         $scope.$apply();
       };
       var geoError = function(error)
